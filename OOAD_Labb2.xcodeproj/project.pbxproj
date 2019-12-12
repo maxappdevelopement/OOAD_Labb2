@@ -12,7 +12,7 @@
 		DD6FAB69239ED2FB00B4557E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6FAB68239ED2FB00B4557E /* Assets.xcassets */; };
 		DD6FAB6C239ED2FB00B4557E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6FAB6A239ED2FB00B4557E /* LaunchScreen.storyboard */; };
 		DD6FAB78239ED35200B4557E /* AustronatuCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB77239ED35200B4557E /* AustronatuCellViewModel.swift */; };
-		DD6FAB7A239ED36600B4557E /* AustronatuTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB79239ED36600B4557E /* AustronatuTableViewModel.swift */; };
+		DD6FAB7A239ED36600B4557E /* AustronautTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB79239ED36600B4557E /* AustronautTableViewModel.swift */; };
 		DD6FAB7C239ED4CA00B4557E /* Austronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB7B239ED4CA00B4557E /* Austronaut.swift */; };
 		DD6FAB7E239ED4DA00B4557E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB7D239ED4DA00B4557E /* WebService.swift */; };
 		DD6FAB80239ED50200B4557E /* AustronautRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6FAB7F239ED50200B4557E /* AustronautRepository.swift */; };
@@ -31,7 +31,7 @@
 		DD6FAB6B239ED2FB00B4557E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD6FAB6D239ED2FB00B4557E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD6FAB77239ED35200B4557E /* AustronatuCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustronatuCellViewModel.swift; sourceTree = "<group>"; };
-		DD6FAB79239ED36600B4557E /* AustronatuTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustronatuTableViewModel.swift; sourceTree = "<group>"; };
+		DD6FAB79239ED36600B4557E /* AustronautTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustronautTableViewModel.swift; sourceTree = "<group>"; };
 		DD6FAB7B239ED4CA00B4557E /* Austronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Austronaut.swift; sourceTree = "<group>"; };
 		DD6FAB7D239ED4DA00B4557E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		DD6FAB7F239ED50200B4557E /* AustronautRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustronautRepository.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DD6FAB77239ED35200B4557E /* AustronatuCellViewModel.swift */,
-				DD6FAB79239ED36600B4557E /* AustronatuTableViewModel.swift */,
+				DD6FAB79239ED36600B4557E /* AustronautTableViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 				DD6FAB80239ED50200B4557E /* AustronautRepository.swift in Sources */,
 				DD6FAB62239ED2F800B4557E /* AppDelegate.swift in Sources */,
 				DD6FAB7C239ED4CA00B4557E /* Austronaut.swift in Sources */,
-				DD6FAB7A239ED36600B4557E /* AustronatuTableViewModel.swift in Sources */,
+				DD6FAB7A239ED36600B4557E /* AustronautTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

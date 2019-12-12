@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol OnFetchedData {
-    func didFetchData(austronaut: Austronaut)
+protocol OnFetchedAustronaut {
+    func didFetch(_ austronaut: Austronaut)
 }

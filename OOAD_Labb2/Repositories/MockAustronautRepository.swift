@@ -9,7 +9,7 @@
 import Foundation
 
 class MockAustronautRepository: AustronautRepository {
-    var observer: OnFetchedData?
+    var observer: OnFetchedAustronaut?
     
     func getAll() {
         let austronaut = Austronaut(people: [
@@ -18,7 +18,7 @@ class MockAustronautRepository: AustronautRepository {
             People(name: "Name", craft: "USS Enterprise"),
             People(name: "Björn", craft: "Battlestar Galactica")
             ])
-        observer?.didFetchData(austronaut: austronaut)
+        observer?.didFetch(austronaut)
     }
 }
 

@@ -9,17 +9,16 @@
 import Foundation
 
 class WebAustronautRepository: AustronautRepository {
-    var observer: OnFetchedData?
+    var observer: OnFetchedAustronaut?
     
     func getAll() {
         WebService().load(resource: Austronaut.all) { [weak self] result in
             switch result {
             case .success(let austronaut):
-                self?.observer?.didFetchData(austronaut: austronaut)
+                self?.observer?.didFetch(austronaut)
             case .failure(let error):
                 print(error)
             }
         }
     }
 }
-

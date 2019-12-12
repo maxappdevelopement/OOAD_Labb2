@@ -52,7 +52,13 @@
                             <outlet property="delegate" destination="Mei-y5-mTP" id="V0X-CK-M9A"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="Fro-3r-adP"/>
+                    <navigationItem key="navigationItem" title="Title" id="Fro-3r-adP">
+                        <barButtonItem key="rightBarButtonItem" title="Fetch" id="8p2-pv-bGP">
+                            <connections>
+                                <action selector="fetchData:" destination="Mei-y5-mTP" id="4z2-Oi-LOL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fz3-DB-Cka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

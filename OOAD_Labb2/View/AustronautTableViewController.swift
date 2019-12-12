@@ -19,14 +19,18 @@ class AustronautTableViewController: UITableViewController {
         //viewModel = AustronautTableViewModel(austronautRepository: MockAustronautRepository())
         viewModel = AustronautTableViewModel(austronautRepository: WebAustronautRepository())
         
-        viewModel?.reloadTableViewCallBack = {[weak self] () in
+        viewModel?.reloadTableViewCallBack = { [weak self] () in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
         }
-        
-        viewModel?.loadAustronauts()
     }
+    
+    //A button in the view that user can click to trigger fetching data from the api and then present them on the screen
+    @IBAction func fetchData(_ sender: Any) {
+         viewModel?.loadAustronauts()
+    }
+    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

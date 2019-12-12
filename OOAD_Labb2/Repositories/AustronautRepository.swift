@@ -9,6 +9,6 @@
 import Foundation
 
 protocol AustronautRepository {
-    var observer: OnFetchedData? { get set }
+    var observer: OnFetchedAustronaut? { get set }
     func getAll()
 }

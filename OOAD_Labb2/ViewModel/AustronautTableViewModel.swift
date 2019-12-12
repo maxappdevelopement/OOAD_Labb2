@@ -8,15 +8,15 @@
 
 import Foundation
 
-class AustronautTableViewModel: OnFetchedData {
+class AustronautTableViewModel: OnFetchedAustronaut {
    
     private var austronautRepository: AustronautRepository
-    var austronautCells : [AustronautCellViewModel] = [AustronautCellViewModel]() {
+    var reloadTableViewCallBack: (() -> Void)?
+    var austronautCells = [AustronautCellViewModel]() {
         didSet {
             self.reloadTableViewCallBack?()
         }
     }
-    var reloadTableViewCallBack: (() -> Void)?
     
     init(austronautRepository: AustronautRepository) {
         self.austronautRepository = austronautRepository
@@ -27,7 +27,7 @@ class AustronautTableViewModel: OnFetchedData {
         austronautRepository.getAll()
     }
     
-    func didFetchData(austronaut: Austronaut) {
+    func didFetch(_ austronaut: Austronaut) {
         self.austronautCells = austronaut.people.map {
             AustronautCellViewModel(austronaut: $0)
         }
